@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Decibelman</string>
+    <string name="title_decibel">Decibel</string>
+    <string name="title_map">Map</string>
+    <string name="decibel">dB</string>
+    <string name="decibel_description">Decibel</string>
+    <string name="min">Min</string>
+    <string name="current">Current</string>
+    <string name="max">Max</string>
+    <string name="settings">Settings</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="alert_save_data">Do you share data such as latitude, longitude, decibels and so on, and display on the map?</string>
+    <string name="yes_no_alert">Yes, and no alert again.</string>
+    <string name="decibel_info">Max: %s\nAverage: %s\nMin: %s</string>
+    <string name="mark_title">Decibel\n%s</string>
+    <string name="show_confirm_dialog">Show Confirm Dialog</string>
+    <string name="quit">Quit</string>
+    <string name="share_info">I was at %s,\nmeasured by me, where the decibels are\n maximum: %s\n mean: %s\n minimum: %s.</string>
+    <string name="menu_upload">Upload</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_report">Report</string>
+
+    <string name="portrait">Portrait</string>
+    <string name="landscape">Landscape</string>
+    <string name="content_switch_lp">It will be effective at the next start.</string>
+</resources>

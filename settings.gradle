@@ -1,0 +1,16 @@
+include ':app'
+
+include ':WidgetLibrary'
+project(':WidgetLibrary').projectDir = new File(settingsDir, '../CaojunLibrary/WidgetLibrary')
+
+include ':UtilsLibrary'
+project(':UtilsLibrary').projectDir = new File(settingsDir, '../CaojunLibrary/UtilsLibrary')
+
+include ':FFTLibrary'
+project(':FFTLibrary').projectDir = new File(settingsDir, '../CaojunLibrary/FFTLibrary')
+
+include ':ParticleLibrary'
+project(':ParticleLibrary').projectDir = new File(settingsDir, '../CaojunLibrary/ParticleLibrary')
+
+include ':VelocimeterLibrary'
+project(':VelocimeterLibrary').projectDir = new File(settingsDir, '../CaojunLibrary/VelocimeterLibrary')

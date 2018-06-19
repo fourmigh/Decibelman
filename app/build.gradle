@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion rootProject.ext.sdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "org.caojun.decibelman"
+        minSdkVersion 16
+        targetSdkVersion rootProject.ext.sdkVersion
+        versionCode 7
+        versionName "1.4.1"
+
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:$androidsupport_version"
+    implementation "com.android.support:design:$androidsupport_version"
+    implementation "com.android.support:support-vector-drawable:$androidsupport_version"
+    implementation 'com.github.zhaokaiqiang.klog:library:latest.release'
+    implementation 'org.jetbrains.anko:anko-common:latest.release'
+    implementation "android.arch.persistence.room:runtime:$googleroom_version"
+    implementation "android.arch.lifecycle:extensions:$googleroom_version"
+    kapt "android.arch.lifecycle:compiler:$googleroom_version"
+    kapt "android.arch.persistence.room:common:$googleroom_version"
+    kapt "android.arch.persistence.room:compiler:$googleroom_version"
+    implementation 'com.github.PhilJay:MPAndroidChart:latest.release'
+    implementation 'cn.bmob.android:bmob-sdk:3.5.8'
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.0'
+    implementation 'com.android.support:multidex:latest.release'
+    implementation project(':WidgetLibrary')
+    implementation project(':UtilsLibrary')
+    implementation project(':FFTLibrary')
+    implementation project(':ParticleLibrary')
+    implementation project(':VelocimeterLibrary')
+}

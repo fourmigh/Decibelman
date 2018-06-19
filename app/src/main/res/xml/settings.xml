@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="sp_confirm_dialog"
+        android:title="@string/show_confirm_dialog" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="sp_switch_lp"
+        android:title="@string/portrait" />
+</PreferenceScreen>

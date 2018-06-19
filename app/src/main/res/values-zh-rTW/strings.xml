@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">分貝俠</string>
+    <string name="title_decibel">分貝</string>
+    <string name="title_map">地圖</string>
+    <string name="decibel">dB</string>
+    <string name="decibel_description">分貝值</string>
+    <string name="min">最小值</string>
+    <string name="current">當前值</string>
+    <string name="max">最大值</string>
+    <string name="settings">設定</string>
+    <string name="alert_save_data">是否分享經緯度、分貝值等數據，並在地圖上顯示？</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="yes_no_alert">是，且不再提示。</string>
+    <string name="decibel_info">最大值：%s\n平均值：%s\n最小值：%s</string>
+    <string name="mark_title">分貝\n%s</string>
+    <string name="show_confirm_dialog">顯示確認對話框</string>
+    <string name="quit">退出</string>
+    <string name="share_info">我在%s，\n經我量測，這裡的分貝值為\n最大：%s\n平均：%s\n最小：%s。</string>
+    <string name="menu_upload">上傳</string>
+    <string name="menu_share">分享</string>
+    <string name="menu_report">拍照舉報</string>
+    <string name="portrait">豎屏</string>
+    <string name="landscape">橫屏</string>
+    <string name="content_switch_lp">下次啟動時生效。</string>
+</resources>
