@@ -34,7 +34,7 @@ class SettingsActivity: AppCompatActivity() {
             sp.onPreferenceChangeListener = this
 
             val mSharedPreferences = activity.getSharedPreferences(PREFER_NAME, Context.MODE_PRIVATE)
-            var value = mSharedPreferences.getBoolean(Key_Switch_LP, true)
+            val value = mSharedPreferences.getBoolean(Key_Switch_LP, true)
             refresh(sp, value)
         }
 

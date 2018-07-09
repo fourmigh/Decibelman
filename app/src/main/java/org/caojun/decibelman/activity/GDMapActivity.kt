@@ -45,7 +45,7 @@ class GDMapActivity: BaseActivity(), LocationSource, AMapLocationListener, AMap.
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_gdmap)
-        gdMapView?.onCreate(savedInstanceState)
+        gdMapView.onCreate(savedInstanceState)
         initialize()
         setOnDatabaseListener(object : OnDatabaseListener {
             override fun onSuccess() {
@@ -58,34 +58,34 @@ class GDMapActivity: BaseActivity(), LocationSource, AMapLocationListener, AMap.
         addMarkersToMap()
 
         fab.setOnCreateContextMenuListener(this)
-        fab.setOnClickListener({
+        fab.setOnClickListener {
             fab.showContextMenu()
-        })
+        }
     }
 
     override fun onResume() {
         super.onResume()
-        gdMapView?.onResume()
+        gdMapView.onResume()
     }
 
     override fun onPause() {
         super.onPause()
-        gdMapView?.onPause()
+        gdMapView.onPause()
     }
 
     override fun onSaveInstanceState(outState: Bundle?) {
         super.onSaveInstanceState(outState)
-        gdMapView?.onSaveInstanceState(outState)
+        gdMapView.onSaveInstanceState(outState)
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        gdMapView?.onDestroy()
+        gdMapView.onDestroy()
     }
 
     override fun onLowMemory() {
         super.onLowMemory()
-        gdMapView?.onLowMemory()
+        gdMapView.onLowMemory()
     }
 
     private fun initialize() {
