@@ -60,8 +60,8 @@ class MainActivity : BaseActivity() {
             }
         })
 
-        val mSharedPreferences = getSharedPreferences(SettingsActivity.PREFER_NAME, Context.MODE_PRIVATE)
-        requestedOrientation = if (mSharedPreferences.getBoolean(SettingsActivity.Key_Switch_LP, true)) {
+        val mSharedPreferences = getSharedPreferences(PREFER_NAME, Context.MODE_PRIVATE)
+        requestedOrientation = if (mSharedPreferences.getBoolean(Key_Switch_LP, true)) {
             ActivityInfo.SCREEN_ORIENTATION_PORTRAIT//竖屏
         } else {
             ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE//横屏

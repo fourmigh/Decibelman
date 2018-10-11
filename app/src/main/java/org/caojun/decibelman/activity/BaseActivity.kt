@@ -19,8 +19,12 @@ import java.util.Date
  */
 open class BaseActivity: BaseAppCompatActivity() {
 
-    private val Key_Confirm_Dialog = "sp_confirm_dialog"
-    private val Key_Switch_LP = "sp_switch_lp"
+    companion object {
+        val PREFER_NAME = "org.caojun.decibelman.settings"
+        private const val Key_Confirm_Dialog = "sp_confirm_dialog"
+        const val Key_Switch_LP = "sp_switch_lp"
+        const val Key_Switch_Welcome = "Key_Switch_Welcome"
+    }
 
     interface OnDatabaseListener {
         fun onSuccess()

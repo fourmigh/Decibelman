@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Decibelman</string>
+    <string name="app_name_l">Decibel</string>
+    <string name="app_name_r">man</string>
     <string name="title_decibel">Decibel</string>
     <string name="title_map">Map</string>
     <string name="decibel">dB</string>
@@ -24,4 +26,6 @@
     <string name="portrait">Portrait</string>
     <string name="landscape">Landscape</string>
     <string name="content_switch_lp">It will be effective at the next start.</string>
+    <string name="switch_welcome">Welcome Animation</string>
+    <string name="skip">Skip</string>
 </resources>

@@ -9,4 +9,9 @@
         android:defaultValue="true"
         android:key="sp_switch_lp"
         android:title="@string/portrait" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="Key_Switch_Welcome"
+        android:title="@string/switch_welcome" />
 </PreferenceScreen>

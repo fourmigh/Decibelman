@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">分貝俠</string>
+    <string name="app_name_l">分貝</string>
+    <string name="app_name_r">俠</string>
     <string name="title_decibel">分貝</string>
     <string name="title_map">地圖</string>
     <string name="decibel">dB</string>
@@ -24,4 +26,6 @@
     <string name="portrait">豎屏</string>
     <string name="landscape">橫屏</string>
     <string name="content_switch_lp">下次啟動時生效。</string>
+    <string name="switch_welcome">歡迎動畫</string>
+    <string name="skip">跳過</string>
 </resources>

@@ -12,12 +12,7 @@ import org.jetbrains.anko.toast
 /**
  * Created by CaoJun on 2017/9/25.
  */
-class SettingsActivity: AppCompatActivity() {
-
-    companion object {
-        val PREFER_NAME = "org.caojun.decibelman.settings"
-        val Key_Switch_LP = "sp_switch_lp"
-    }
+class SettingsActivity: BaseActivity() {
 
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
